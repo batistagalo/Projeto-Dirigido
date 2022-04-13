@@ -11,11 +11,20 @@ body {
 	background-image: url("../img/bg3.jpg");
 	background-size: cover;
 }
+h1{
+	margin-bottom: 20px;
+}
+input {
+	border-bottom: 2px solid #323232;
+	padding: 10px;
+	font-size: .9rem;
+	margin-bottom: 10px;
+  }
 
 .form {
 	overflow: hidden;
 	background: #fff;
-	width: 700px;
+	width: 850px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -26,24 +35,29 @@ body {
 
 label{
 	font-weight: bold;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 /*Inputs*/
 input[type="radio"] {
 	border-bottom: 2px solid #323232;
 	padding: 10px;
+	font-weight: lighter;
 	font-size: .9rem;
-	margin-bottom: 40px;
+	margin-bottom: 10px;
+}
+
+input[type="text"], select{
+	font-size: .9rem;
 }
 
 textarea:focus, select:focus, input:focus {
 	outline: none;
 }
-
 input:focus {
 	border-bottom: 2px solid #3b5998;
 }
-
 /* Botões */
 input[type="submit"] {
 	background: #3b5998;
@@ -62,20 +76,15 @@ input[type="button"] {
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: bold;
+	font-size: .9rem;
 	border-radius: 30px;
 	border: none;
 	width: 100px;
 	height: 45px;
 	cursor: pointer;
-
-}
-
-/*input[type="submit"]:hover {
-	background: #3b5998;
-	color: #fff;
 }
 
 input[type="button"]:hover {
-	background: #3b5998;
-	color: #fff;
-}*/
+    background-color: #214592;
+    transition: .5s;
+}
