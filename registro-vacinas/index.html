@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro de vacinas</title>
+</head>
+<body>
+  <div class="form">
+    <form method="post" action="index.php"><br>
+      <h1>Criar novo registro de vacina</h1><br>
+
+    <div class= "half-box spacing">
+      <label>Nomeclatura:</label>
+      <select name="nomeclatura">
+        <option value="0">Escolha a Nomeclarura</option>
+          <option value="1">Bacilo Calmette-Guerin</option>
+          <option value="2">Covid-19</option>
+          <option value="3">Difteria, Tétano e Coqueluche</option>
+          <option value="4">Dupla Adulto</option>
+          <option value="5">Dupla Adulto (dT)</option>
+          <option value="6">Febre Amarela</option>
+          <option value="7">Hepatite A</option>
+          <option value="8">Hepatite B</option>
+          <option value="9">HPV (Feminina)</option>
+          <option value="10">HPV (Masculina)</option>
+          <option value="11">Influenza</option>
+          <option value="12">Meningocócica ACWY</option>
+          <option value="13">Meningocócica C</option>
+          <option value="14">Pentavalente</option>
+          <option value="15">Pneumocócica 10 V</option>
+          <option value="16">Rotavírus</option>
+          <option value="17">Tetra Viral</option>
+          <option value="18">Tríplice Bacteriana</option>
+          <option value="19">Tríplice Viral</option>
+          <option value="20">Vacina Inativada Poliomielite</option>
+          <option value="21">Vacina Oral Poliomielite</option>
+          <option value="22">Varicela</option>
+        </select>
+    </div>
+
+    <div class="half-box">
+      <label>Dose:</label>
+      <input type="text" id="dode" size="10" placeholder="Digite a dose">
+    </div>
+
+    <div class="half-box spacing">
+      <label>Sigla:</label>
+      <input type="text" id="sigla" size="10" placeholder="ABCDE">
+    </div>
+
+    <div class="half-box">
+      <label>Lote:</label>
+      <input type="text" id="rg" minlength="9" maxlength="10"pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}"
+      required autocomplete="off" placeholder="123ABC456D">
+    </div>
+
+    <div class="half-box spacing">
+      <label>Idade(anos):</label>
+      <input type="number" name="idade" min="0" max="110" placeholder="Somente números">
+    </div>
+
+    <div class="half-box">
+      <label>Data:</label>
+      <input type="date" name="data" id="data">
+    </div>
+
+    <div class="full-box">
+      <label for="informacao">Acesse informações sobre todas as vacinas
+        <a href="https://www.saude.pr.gov.br/Pagina/Vacinas"> aqui</a></label>
+    </div>
+
+    <input type="submit" value="Salvar">&nbsp; &nbsp;
+
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+    color: #323232;
+    border: none;
+    text-align: justify;
+}
+body {
+    padding-top: 5vh;
+    background-image: url('../img/azul\ sólido.jpg');
+    background-size: cover;
+    background-position-y: -150px;
+}
+
+#main-container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    text-indent: 25px;
+    margin-bottom: 5vh;
+}
+
+#main-container h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+
+}
+#main-container h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+#main-container h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
