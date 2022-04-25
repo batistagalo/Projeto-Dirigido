@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cadastro de Usuário</title>
+    <script>src="js/script.js"</script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,18 +26,18 @@
             </div>
             <div class="half-box spacing">
                 <label for="password">Senha</label>
-                <input type="password" name="password" id="password" placeholder="Digite sua nova senha">
+                <input type="password" name="password" id="password" placeholder="Digite sua nova senha" required>
             </div>
             <div class="half-box">
                 <label for="passconfirmation">Senha</label>
-                <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme sua senha">
+                <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme sua senha" required>
             </div>
             <div class="full-box">
                 <input type="checkbox" name="agreement" id="agreement">
-                <label for="agreement" id="agreement-label">Eu li e aceito os <a href="C:\Users\Marina\OneDrive\Desktop\Visual  Studio\termo-de-uso\index.html" >termos de uso</a></label>
+                <label for="agreement" id="agreement-label" aria-required="true">Eu li e aceito os <a href="C:\Users\Marina\OneDrive\Desktop\Visual  Studio\termo-de-uso\index.html" >termos de uso</a></label>
             </div>
             <div class="full-box">
-                <input type="button" id="btn-submit" value="Registrar">
+                <input type="submit" id="btn-submit" value="Registrar">
             </div>
         </form>
     </div>
